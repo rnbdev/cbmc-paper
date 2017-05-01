@@ -325,17 +325,34 @@
 % author names and affiliations
 % use a multiple column layout for up to three different
 % affiliations
+%\author{\IEEEauthorblockN{Michael Shell}
+%\IEEEauthorblockA{School of Electrical and\\Computer Engineering\\
+%Georgia Institute of Technology\\
+%Atlanta, Georgia 30332--0250\\
+%Email: http://www.michaelshell.org/contact.html}
+%\and
+%\IEEEauthorblockN{Homer Simpson}
+%\IEEEauthorblockA{Twentieth Century Fox\\
+%Springfield, USA\\
+%Email: homer@thesimpsons.com}
+%\and
+%\IEEEauthorblockN{James Kirk\\ and Montgomery Scott}
+%\IEEEauthorblockA{Starfleet Academy\\
+%San Francisco, California 96678--2391\\
+%Telephone: (800) 555--1212\\
+%Fax: (888) 555--1212}}
+
 \author{\IEEEauthorblockN{Ranadeep Biswas}
-\IEEEauthorblockA{Chennai Mathematical Institute\\}
+\IEEEauthorblockA{Chennai Mathematical Institute}
 \and
 \IEEEauthorblockN{Madhukar Kumar}
-\IEEEauthorblockA{TCS\\}
+\IEEEauthorblockA{TCS}
 \and
 \IEEEauthorblockN{Peter Schrammel}
-\IEEEauthorblockA{University of Sussex\\}
+\IEEEauthorblockA{University of Sussex}
 \and
 \IEEEauthorblockN{Mandayam Srivas}
-\IEEEauthorblockA{Chennai Mathematical Institute\\}
+\IEEEauthorblockA{Chennai Mathematical Institute}}
 
 % conference papers do not typically use \thanks and this command
 % is locked out in conference mode. If really needed, such as for
@@ -374,7 +391,7 @@
 % As a general rule, do not put math, special symbols or citations
 % in the abstract
 \begin{abstract}
-The abstract goes here.
+Most existing Bounded Model Checkers (BMC) for C programs are monolithic, i.e., inline all procedure calls before unwinding.the loops.  Monolithic BMC has the drawback that the size of the SAT formula, which is proportional to the size of the unwound program, can grow exponentially in the number of procedure calls in the program.  An alternative method is to use an inter-procedural approach: instead of in-lining procedure calls, we compute context-sensitive approximations of function summaries for each procedure and verify each procedure (with assertions) separately once.  We have built a prototype tool that explores several strategies (backward, forward, and mixed) for computing summaries and use them for modular verification.  We compare results of running our tool against monolithic BMC on a set of SV-COMP benchmarks.
 \end{abstract}
 
 % no keywords
@@ -510,7 +527,11 @@ Subsubsection text here.
 % \fnbelowfloat command of the stfloats package.
 
 
+\section{The Method}
 
+\section{Implementation}
+
+\section{Experiments}
 
 \section{Conclusion}
 The conclusion goes here.
